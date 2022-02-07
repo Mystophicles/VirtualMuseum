@@ -1,0 +1,44 @@
+<html>
+    
+<head>
+    <script src='https://aframe.io/releases/1.2.0/aframe.min.js'></script>
+    
+    <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aframe-blink-controls/dist/aframeblink-controls.min.js"></script>
+</head>
+    
+    <body>
+        <a-scene inspector-plugin-recast cursor="rayOrigin: mouse">
+    
+            <a-assets id="assets">
+                <a-asset-item id="3dEnvironment" src="mitsubishi_starion_gsr-vr/scene.gltf"></a-asset-item>
+            </a-assets>
+        
+            <!--<a-assets>
+                <img id="MySky" crossorigin src="https://ca-v2.s3-ap-southeast-2.amazonaws.com/rms/image-gallery/m4-360-image2_543.jpg">
+             </a-assets>
+                <a-sky src="#MySky"></a-sky>
+            </a-sphere> -->
+
+            <a-entity gltf-model="#3dEnvironment" rotation="0 -14.4 0" position="-1.016 1.05 -3.026"
+                scale="0.7 0.7 0.7"></a-entity>
+
+            <a-plane scale="1 1 1" color="#49423c" width="6" height="6" rotation="-90 0 0"
+                 color="grey" position="0 0.9 -3"></a-plane>
+
+            <a-entity id="nav-mesh" gltf-model="navmesh.gltf" nav-mesh rotation="0 0
+                 0" position="0 0 0" visible="false">
+            </a-entity>
+
+            <a-entity id="player" movement-controls="constrainToNavMesh: true;">
+                <a-entity camera position="0 1.6 0" lookcontrols="pointerLockEnabled: false" wasd-controls></a-entity>
+                <a-entity id="right-hand" laser-controls="hand: right"
+                blink-controls="cameraRig: #player; teleportOrigin: #camera;
+                collisionEntities: #nav-mesh"></a-entity>
+                </a-entity>
+
+        </a-scene>
+    </body>
+</html>
+        

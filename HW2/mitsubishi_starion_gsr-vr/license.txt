@@ -1,0 +1,11 @@
+Model Information:
+* title:	Mitsubishi Starion GSR-VR
+* source:	https://sketchfab.com/3d-models/mitsubishi-starion-gsr-vr-56c780a9e82b4c739517a13b98a8e77a
+* author:	All-Wide (https://sketchfab.com/dsm350)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Mitsubishi Starion GSR-VR" (https://sketchfab.com/3d-models/mitsubishi-starion-gsr-vr-56c780a9e82b4c739517a13b98a8e77a) by All-Wide (https://sketchfab.com/dsm350) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
